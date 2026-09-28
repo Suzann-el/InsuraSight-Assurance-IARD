@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/asus/Desktop/insura-sight/mlruns/1/models/m-b3dba1da4a89471393fc6aa00b957e8c/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.13.9
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+mlflow_version: 3.16.1
+model_id: m-b3dba1da4a89471393fc6aa00b957e8c
+model_size_bytes: 45292
+model_uuid: m-b3dba1da4a89471393fc6aa00b957e8c
+prompts: null
+run_id: b3b4ccaedbac4930b3fa7ed940da7a31
+utc_time_created: '2026-09-28 20:16:00.620306'

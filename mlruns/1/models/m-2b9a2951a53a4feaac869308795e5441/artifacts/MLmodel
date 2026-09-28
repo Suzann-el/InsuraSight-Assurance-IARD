@@ -1,0 +1,22 @@
+artifact_path: file:C:/Users/asus/Desktop/insura-sight/mlruns/1/models/m-2b9a2951a53a4feaac869308795e5441/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.13.9
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBRegressor
+    model_format: ubj
+    xgb_version: 3.4.1
+mlflow_version: 3.16.1
+model_id: m-2b9a2951a53a4feaac869308795e5441
+model_size_bytes: 435246
+model_uuid: m-2b9a2951a53a4feaac869308795e5441
+prompts: null
+run_id: b085cd9122d842789c63ea0b2258b321
+utc_time_created: '2026-09-28 20:17:23.466962'

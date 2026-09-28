@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+
+  # ── API FastAPI ──────────────────────────────────────────────────────────
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: insura-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data:ro
+      - ./models:/app/models:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  # ── Dashboard Streamlit ──────────────────────────────────────────────────
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    container_name: insura-dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/app/data:ro
+      - ./models:/app/models:ro
+    environment:
+      - API_BASE_URL=http://api:8000
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+networks:
+  default:
+    name: insura-network

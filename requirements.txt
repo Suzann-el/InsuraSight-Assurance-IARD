@@ -1,0 +1,27 @@
+# Data
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+xgboost>=2.0
+statsmodels>=0.14
+hdbscan>=0.8
+umap-learn>=0.5
+prophet>=1.1
+shap>=0.44
+
+# API
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.0
+
+# Dashboard
+streamlit>=1.32
+matplotlib>=3.8
+seaborn>=0.13
+plotly>=5.18
+
+# MLflow
+mlflow>=2.10
+
+# Utils
+python-multipart>=0.0.9
