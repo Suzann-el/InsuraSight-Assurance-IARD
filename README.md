@@ -11,8 +11,10 @@ docker pull suzannelhaouzi/insura-sight-dashboard
 
 🔗 https://hub.docker.com/u/suzannelhaouzi
 
-## Render : https://insura-sight.onrender.com/docs
-## streamlit : https://insura-sight.onrender.com/docs
+## Render 
+https://insura-sight.onrender.com/docs
+## streamlit 
+https://insurasight-assurance-iard.streamlit.app/
 
 
 ## Architecture
