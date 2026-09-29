@@ -28,7 +28,7 @@ st.set_page_config(
     layout     = "wide",
     initial_sidebar_state = "expanded",
 )
-BASE_DIR = r"C:\Users\asus\Desktop\insura-sight"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
 
 # ── Palette ──────────────────────────────────────────────────────────────────
