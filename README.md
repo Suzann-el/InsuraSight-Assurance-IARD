@@ -2,6 +2,19 @@
 
 Projet end-to-end de suivi de sinistralité et de modélisation actuarielle pour un portefeuille assurance IARD (auto, habitation, santé).
 
+## 🐳 Docker Hub
+
+Images disponibles publiquement :
+
+docker pull suzannelhaouzi/insura-sight-api
+docker pull suzannelhaouzi/insura-sight-dashboard
+
+🔗 https://hub.docker.com/u/suzannelhaouzi
+
+## Render : https://insura-sight.onrender.com/docs
+## streamlit : https://insura-sight.onrender.com/docs
+
+
 ## Architecture
 
 ```
