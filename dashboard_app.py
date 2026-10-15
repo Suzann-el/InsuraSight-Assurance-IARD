@@ -90,8 +90,7 @@ models = load_models()
 
 # ── Sidebar navigation ───────────────────────────────────────────────────────
 
-st.sidebar.image("https://img.icons8.com/fluency/96/insurance.png", width=60)
-st.sidebar.title("InsuraSight")
+st.sidebar.markdown("## 🛡️ InsuraSight")
 st.sidebar.caption("Tableau de bord sinistralité")
 st.sidebar.markdown("---")
 
