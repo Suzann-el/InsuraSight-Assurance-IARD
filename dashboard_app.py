@@ -513,7 +513,7 @@ elif page == "🚨 Détection Fraude":
         fig, ax = plt.subplots(figsize=(6, 3.5))
         data_bp = [df_fr[df_fr["flag_fraude_ml"]==0]["montant_reclame"].values,
                    df_fr[df_fr["flag_fraude_ml"]==1]["montant_reclame"].values]
-        bp = ax.boxplot(data_bp, patch_artist=True, labels=["Normal","Suspect"],
+        bp = ax.boxplot(data_bp, patch_artist=True, tick_labels=["Normal","Suspect"],
                         medianprops={"color":"white","linewidth":2},
                         flierprops={"marker":".","markersize":3,"alpha":0.3})
         bp["boxes"][0].set_facecolor(C["success"])
